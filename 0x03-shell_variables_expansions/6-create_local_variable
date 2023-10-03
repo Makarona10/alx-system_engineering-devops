@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -local BEST="school"
+declare -local BEST="School"
