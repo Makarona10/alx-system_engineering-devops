@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+me=4
+
+((me = me + 1))
+
+echo "The username is $me"
