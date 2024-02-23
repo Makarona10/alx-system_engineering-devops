@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
+# This script is displaying 3 different senteces in 3 different cases
 
 i=0
 while [ $i -lt 10 ]
