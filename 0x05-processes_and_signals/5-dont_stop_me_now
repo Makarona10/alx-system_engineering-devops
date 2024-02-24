@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 # This script stops 4-to_infinity_and_beyond process
 
-script_pid=$(pgrep -f "your_script_name.sh")
+pid=$(pgrep -f "4-to_infinity_and_beyond")
 
-if [ -n "$script_pid" ]
-then
-    kill "$script_pid"
-fi
+kill "$pid"
