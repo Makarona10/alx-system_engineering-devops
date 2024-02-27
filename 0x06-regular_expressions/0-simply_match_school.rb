@@ -1,3 +1,19 @@
 #!/usr/bin/env ruby
 
-puts ARGV[0].scan(/school/i).join
+def match_school(argument)
+    regex = /School/
+  
+    if argument =~ regex
+      puts "Match found: '#{argument}' contains 'School'."
+    else
+      puts "No match: '#{argument}' does not contain 'School'."
+    end
+  end
+  
+  if ARGV.empty?
+    puts "Usage: ruby match_school.rb <argument>"
+  else
+    user_argument = ARGV[0]
+  
+    match_school(user_argument)
+  end
