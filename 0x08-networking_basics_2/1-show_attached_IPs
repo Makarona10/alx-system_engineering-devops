@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Displays all acive IPv4 IPs on the machine it’s executed on.
+# Displays all acive IPv4 IPs on the machine itâ€™s executed on.
 
 # ifconfig | awk -F "[: ]+" '/inet addr:/ { print $4 }'
 
