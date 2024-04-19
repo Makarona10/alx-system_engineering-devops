@@ -1,11 +1,11 @@
 # installs the package puppet-lint
 
-package { 'flask':
-  ensure   => '2.1.0',
+package { 'flask=2.1.0':
+  ensure   => installed,
   provider => 'pip3'
 }
-package {'werkzeug':
-  ensure   => '2.1.1',
+package {'werkzeug=2.1.1':
+  ensure   => installed,
   provider => 'pip3',
 }
 
