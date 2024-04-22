@@ -1,10 +1,15 @@
-$file_content = file('/etc/ssh/ssh_config')
-$config = "${file_content}\
-    IdentityFile ~/.ssh/school
-    PasswordAuthentication no
-"
-file {  'school':
-  ensure  => 'present',
-  path    => '/etc/ssh/ssh_config',
-  content => $config
+include stdlib
+
+file_line { 'Turn off passwd auth':
+  ensure => present,
+  path   => '/etc/ssh/ssh_config',
+  line   => '    PasswordAuthentication no',
+  replace => true,
+}
+
+file_line { 'Delare identity file':
+  ensure => present,
+  path   => '/etc/ssh/ssh_config',
+  line   => '     IdentityFile ~/.ssh/school',
+  replace => true,
 }
