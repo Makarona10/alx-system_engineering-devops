@@ -3,7 +3,6 @@
 
 from sys import argv
 import requests
-import json
 
 
 def get_user_tasks():
